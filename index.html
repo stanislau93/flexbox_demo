@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>title</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            border: 5px solid blue;
+            width: 500px;
+            height: 200px;
+            justify-content: space-evenly;
+
+            flex-wrap: wrap;
+            flex-direction: row;
+
+            align-items: baseline;
+            justify-content: space-evenly;
+
+            align-content: space-between;
+
+            /* flex-flow: column-reverse wrap; */
+
+            row-gap: 10px;
+        }
+
+        .flex-item {
+            border: 1px solid black;
+            width: 100px;
+        }
+
+        .flex-item:nth-child(2) {
+            font-size: 5px;
+            order: 3;
+        }
+
+        .flex-item:nth-child(6) {
+            font-size: 30px;
+            order: 2;
+        }
+
+        .flex-item:nth-child(7) {
+            align-self: flex-start;
+            order: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">One</div>
+        <div class="flex-item">Two</div>
+        <div class="flex-item">Three</div>
+        <div class="flex-item">Four</div>
+        <div class="flex-item">Five</div>
+        <div class="flex-item">Six</div>
+        <div class="flex-item">Seven</div>
+        <div class="flex-item">Eight</div>
+        <div class="flex-item">Nine</div>
+    </div>
+</body>
+
+</html>
